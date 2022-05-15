@@ -1,0 +1,11 @@
+.nav-position{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 100%;
+    margin-bottom: 0%;
+}
+.text-tittle{
+    color: white;
+}
