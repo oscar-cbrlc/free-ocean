@@ -1,6 +1,7 @@
 # free-ocean
 
 <h2>General Information</h2>
+  <p>This is a project made for the Hackaton "Hack The Ocean"</p>
   <p>Free Ocean proposal to reach the communities, where will be able to participate against pollution ocean, the idea is to have a social impact to promote the care of the oceans.</p>
 
 <h2>Technologies</2>
@@ -12,11 +13,11 @@
   </div>
 
 <h2>Status</h2>
-  <p> this project is a BETA in development</p>
+  <p> This project is a BETA in development</p>
 
 <h2>Installation</h2>
 
-Project for the Hackaton "Hack The Ocean"
+
 
 To use this project you need to have [Node and NPM](https://nodejs.org/es/) installed.<br>
 After cloning, run the following commands in the terminal from the project folder:
