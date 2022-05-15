@@ -1,4 +1,5 @@
 const JsonHandler = require("./../../lib/utils/JsonHandler");
+const { v4: uuidv4 } = require("uuid");
 
 const JSONPath = "./../../test/test-meetings.json";
 
@@ -20,5 +21,16 @@ describe("JsonHandler", () => {
 			reading = [data];
 		}
 		expect(postWrite).toEqual(reading);
+	});
+    test("should update to file", () => {
+        const id = uuidv4(); 
+		const oldData = {id: id, name: "another movement", organizer: "john doe"};
+        const newData = {id: id, name: "different"};
+		JsonHandler.write(JSONPath, oldData);
+        JsonHandler.update(JSONPath, id, {id: id, name: "different"});
+
+		const postWrite = JsonHandler.read(JSONPath);
+        expect(postWrite).not.toContain(oldData);
+        expect(postWrite).toContainEqual(newData);
 	});
 });
