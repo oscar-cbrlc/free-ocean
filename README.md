@@ -28,8 +28,8 @@ npm install uuid
 ```
 
 <h2>Collaboration</2>
-  <a href="https://github.com/EmmanuelPerezt/EmmanuelPerezt"> @EmmanuelPerezt</a>
-  <a href="https://github.com/Jedlcl1"> @Jedlcl1</a>
-  <a href="https://github.com/dJacoboSanta"> @dJacoboSanta</a>
-  <a href="https://github.com/EdgarAnt"> @EdgarAnt</a>
-  <a href="https://github.com/oscar-cbrlc"> @oscar-cbrlc</a>
+  <li><a href="https://github.com/EmmanuelPerezt/EmmanuelPerezt"> @EmmanuelPerezt</a></li>
+  <li><a href="https://github.com/Jedlcl1"> @Jedlcl1</a></li>
+  <li><a href="https://github.com/dJacoboSanta"> @dJacoboSanta</a></li>
+  <li><a href="https://github.com/EdgarAnt"> @EdgarAnt</a></li>
+  <li><a href="https://github.com/oscar-cbrlc"> @oscar-cbrlc</a></li>
