@@ -1,4 +1,4 @@
-# free-ocean-backend
+# free-ocean
 
 <h2>General Information</h2>
   <p>Free Ocean proposal to reach the communities, where will be able to participate against pollution ocean, the idea is to have a social impact to promote the care of the oceans.</p>
@@ -27,9 +27,65 @@ npm install eslint --save-dev
 npm install uuid
 ```
 
-<h2>Collaboration</2>
+<h2>Collaborators</2>
   <li><a href="https://github.com/EmmanuelPerezt/EmmanuelPerezt"> @EmmanuelPerezt</a></li>
   <li><a href="https://github.com/Jedlcl1"> @Jedlcl1</a></li>
   <li><a href="https://github.com/dJacoboSanta"> @dJacoboSanta</a></li>
   <li><a href="https://github.com/EdgarAnt"> @EdgarAnt</a></li>
   <li><a href="https://github.com/oscar-cbrlc"> @oscar-cbrlc</a></li>
+  
+  
+## Project Diagram
+```mermaid
+graph
+  JSON --> JSON_HANDLER
+  JSON_HANDLER --> MEETINGS_CONTROLLER
+  MEETING --> MEETINGS_CONTROLLER
+  MEETING --> WEB_PAGE
+  MEETINGS_CONTROLLER --> WEB_PAGE
+```
+
+## Class Diagram
+  
+```mermaid
+classDiagram
+    Meeting --> FrontEnd
+    MeetingsController --> FrontEnd
+    JsonHandler --> MeetingsController
+    class Meeting{
+      string id
+      string name
+      string organizer
+      string description
+      string[] tags
+      date startDate
+      date endDate
+      string location
+      number followers
+      bool isActive
+      addFollower()
+      removeFollower()
+      addTag(tag)
+      removeTag(tag)
+    }
+    class MeetingsController{
+      getAll() Meeting[]
+      getMeeting(id) Meeting
+      filterMeetings(predicate) Meetings[]
+      addFollower(meetingId)
+      removeFollower(meetingId)
+      addTag(meetingId, tag)
+      removeTag(meetingId, tag)
+      addMeeting(meeting)
+      updateMeeting(id, newMeeting)
+      deleteMeeting(id)
+    }
+    class JsonHandler{
+      read(filePath) any
+      rewrite(filePath, data)
+      write(filePath, data)
+      update(filePath, id, newData)
+      delete(filePath, id)
+    }
+```
+  
