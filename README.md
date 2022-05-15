@@ -7,4 +7,5 @@ After cloning, run the following commands in the terminal from the project folde
 ```
 npm install jest --save-dev
 npm install eslint --save-dev
+npm install uuid
 ```
