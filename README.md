@@ -23,7 +23,7 @@ To use this project you need to have [Node and NPM](https://nodejs.org/es/) inst
 After cloning, run the following commands in the terminal from the project folder:
 
 ```
-npm install jest --save-dev
+npm install --save-dev jest@26.0.0
 npm install eslint --save-dev
 npm install uuid
 ```
