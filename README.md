@@ -4,7 +4,7 @@
   <p>This is a project made for the Hackaton "Hack The Ocean"</p>
   <p>Free Ocean proposal to reach the communities, where will be able to participate against pollution ocean, the idea is to have a social impact to promote the care of the oceans.</p>
   
-<a href="./webpage/index.html">Web page</a>
+<a href="https://oscar-cbrlc.github.io/free-ocean/webpage/index.html">Web page</a>
 
 <h2>Technologies</2>
   <div id="badge" align="center">
