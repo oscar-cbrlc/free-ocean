@@ -33,4 +33,17 @@ describe("JsonHandler", () => {
         expect(postWrite).not.toContain(oldData);
         expect(postWrite).toContainEqual(newData);
 	});
+    test("should delete object in file", () => {
+        const id = uuidv4();
+		const data = {id: id, name: "new movement", organizer: "john doe"};
+		JsonHandler.write(JSONPath, data);
+        JsonHandler.delete(JSONPath, id);
+
+        const testData = {test:"test"};
+        JsonHandler.write(JSONPath, testData)
+
+		const postWrite = JsonHandler.read(JSONPath);
+        // expect(postWrite).not.toContainEqual(testData);
+        expect(postWrite).not.toContain(data);
+	});
 });
