@@ -22,8 +22,6 @@ front-end repo is [this](https://github.com/oscar-cbrlc/free-ocean-web-page) <br
 
 <h2>Installation</h2>
 
-
-
 To use this project you need to have [Node and NPM](https://nodejs.org/es/) installed.<br>
 After cloning, run the following commands in the terminal from the project folder:
 
@@ -40,8 +38,8 @@ npm install uuid
   <li><a href="https://github.com/EdgarAnt"> @EdgarAnt</a></li>
   <li><a href="https://github.com/oscar-cbrlc"> @oscar-cbrlc</a></li>
   
-  
-## Project Diagram
+## Project structure
+### Project Diagram
 ```mermaid
 graph
   JSON --> JSON_HANDLER
@@ -51,7 +49,7 @@ graph
   MEETINGS_CONTROLLER --> WEB_PAGE
 ```
 
-## Class Diagram
+### Class Diagram
   
 ```mermaid
 classDiagram
@@ -94,4 +92,8 @@ classDiagram
       delete(filePath, id)
     }
 ```
-  
+### API Endpoints
+#### GET
+```/v1/meetings```: gets a list of all the existing meetings
+#### POST
+```/v1/name=:name&&org=org&&desc=description&&tags=[tags]```: adds a new meeting with the indicated params
