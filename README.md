@@ -29,6 +29,8 @@ After cloning, run the following commands in the terminal from the project folde
 npm install --save-dev jest@26.0.0
 npm install eslint --save-dev
 npm install uuid
+npm install express
+npm install cors
 ```
 
 <h2>Collaborators</2>
@@ -94,6 +96,6 @@ classDiagram
 ```
 ### API Endpoints
 #### GET
-```https://freeoceanapi.azurewebsites.net//v1/meetings```: gets a list of all the existing meetings
+```https://freeoceanapi.azurewebsites.net/v1/meetings```: gets a list of all the existing meetings
 #### POST
 ```https://freeoceanapi.azurewebsites.net/v1/name=:name&&org=org&&desc=description&&tags=[tags]```: adds a new meeting with the indicated params
