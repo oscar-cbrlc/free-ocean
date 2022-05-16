@@ -7,7 +7,7 @@ front-end repo is [this](https://github.com/oscar-cbrlc/free-ocean-web-page) <br
   
   <p>Free Ocean proposal to reach the communities, where will be able to participate against pollution ocean, the idea is to have a social impact to promote the care of the oceans.</p>
   
-<a href="https://oscar-cbrlc.github.io/free-ocean/webpage/index.html">Web page</a>
+<a href="https://oscar-cbrlc.github.io/free-ocean-web-page/">Web page</a>
 
 <h2>Technologies</2>
   <div id="badge" align="center">
