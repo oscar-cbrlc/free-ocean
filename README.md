@@ -7,7 +7,7 @@ front-end repo is [this](https://github.com/oscar-cbrlc/free-ocean-web-page) <br
   
   <p>Free Ocean proposal to reach the communities, where will be able to participate against pollution ocean, the idea is to have a social impact to promote the care of the oceans.</p>
   
-<a href="https://oscar-cbrlc.github.io/free-ocean/webpage/index.html">Web page</a>
+<a href="https://oscar-cbrlc.github.io/free-ocean-web-page/">Web page</a>
 
 <h2>Technologies</2>
   <div id="badge" align="center">
@@ -22,8 +22,6 @@ front-end repo is [this](https://github.com/oscar-cbrlc/free-ocean-web-page) <br
 
 <h2>Installation</h2>
 
-
-
 To use this project you need to have [Node and NPM](https://nodejs.org/es/) installed.<br>
 After cloning, run the following commands in the terminal from the project folder:
 
@@ -31,6 +29,8 @@ After cloning, run the following commands in the terminal from the project folde
 npm install --save-dev jest@26.0.0
 npm install eslint --save-dev
 npm install uuid
+npm install express
+npm install cors
 ```
 
 <h2>Collaborators</2>
@@ -40,8 +40,8 @@ npm install uuid
   <li><a href="https://github.com/EdgarAnt"> @EdgarAnt</a></li>
   <li><a href="https://github.com/oscar-cbrlc"> @oscar-cbrlc</a></li>
   
-  
-## Project Diagram
+## Project structure
+### Project Diagram
 ```mermaid
 graph
   JSON --> JSON_HANDLER
@@ -51,7 +51,7 @@ graph
   MEETINGS_CONTROLLER --> WEB_PAGE
 ```
 
-## Class Diagram
+### Class Diagram
   
 ```mermaid
 classDiagram
@@ -94,4 +94,8 @@ classDiagram
       delete(filePath, id)
     }
 ```
-  
+### API Endpoints
+#### GET
+```https://freeoceanapi.azurewebsites.net/v1/meetings```: gets a list of all the existing meetings
+#### POST
+```https://freeoceanapi.azurewebsites.net/v1/name=:name&&org=org&&desc=description&&tags=[tags]```: adds a new meeting with the indicated params
