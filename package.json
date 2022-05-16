@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node node_modules/jest/bin/jest",
     "linter": "node ./node_modules/eslint/bin/eslint.js .",
-    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix", 
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix",
     "start": "node app.js"
   },
   "author": "",
@@ -16,6 +16,7 @@
     "jest": "^26.0.0"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.18.1",
     "uuid": "^8.3.2"
   }
