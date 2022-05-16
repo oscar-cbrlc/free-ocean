@@ -1,8 +1,13 @@
 # free-ocean
 
 <h2>General Information</h2>
-  <p>This is a project made for the Hackaton "Hack The Ocean"</p>
+This is the back-end of a project made for the Hackaton "Hack The Ocean"<br>
+
+front-end repo is [this](https://github.com/oscar-cbrlc/free-ocean-web-page) <br>
+  
   <p>Free Ocean proposal to reach the communities, where will be able to participate against pollution ocean, the idea is to have a social impact to promote the care of the oceans.</p>
+  
+<a href="https://oscar-cbrlc.github.io/free-ocean/webpage/index.html">Web page</a>
 
 <h2>Technologies</2>
   <div id="badge" align="center">
