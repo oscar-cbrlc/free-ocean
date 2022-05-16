@@ -30,7 +30,7 @@ app.get('/v1/meetings', cors(), (req, res) => {
 
 // returns an object 
 // http://localhost:3000/explorersInNode
-app.post('/v1/name=:name&&org=:org&&desc=:desc&&tags=:tags', (req, res) => {
+app.post('/v1/name=:name&&org=:org&&desc=:desc&&tags=:tags', cors(), (req, res) => {
     const name = req.params.name;
     const org = req.params.org;
     const desc = req.params.desc;
