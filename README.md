@@ -94,6 +94,6 @@ classDiagram
 ```
 ### API Endpoints
 #### GET
-```/v1/meetings```: gets a list of all the existing meetings
+```https://freeoceanapi.azurewebsites.net//v1/meetings```: gets a list of all the existing meetings
 #### POST
-```/v1/name=:name&&org=org&&desc=description&&tags=[tags]```: adds a new meeting with the indicated params
+```https://freeoceanapi.azurewebsites.net/v1/name=:name&&org=org&&desc=description&&tags=[tags]```: adds a new meeting with the indicated params
